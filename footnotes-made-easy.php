@@ -1,13 +1,18 @@
 <?php
 /*
-Plugin Name: Footnotes Made Easy
-Plugin URI: https://github.com/divibanks/footnotes-made-easy/
-Description: Allows post authors to easily add and manage footnotes in posts.
-Version: 3.0.7
-Author: Patrick Lumumba
-Author URI: https://lumumbas.blog
-Text Domain: footnotes-made-easy
-*/
+ * Plugin Name:       Footnotes Made Easy
+ * Plugin URI:        https://lumumbas.blog/plugins/footnotes-made-easy/
+ * Description:       Allows post authors to easily add and manage footnotes in posts.
+ * Version:           4.0.0-beta.1
+ * Requires at least: 6.0
+ * Requires PHP:      7.4
+ * Author:            Patrick Lumumba
+ * Author URI:        https://lumumbas.blog
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       footnotes-made-easy
+ * Domain Path:       /languages
+ */
 
 /**
 * Footnotes Made Easy
@@ -342,15 +347,13 @@ class swas_wp_footnotes {
 	function plugin_meta( $links, $file ) {
 
 		if ( false !== strpos( $file, 'footnotes-made-easy.php' ) ) {
-
-			$links = array_merge( $links, array( '<a href="https://github.com/wpcorner/footnotes-made-easy/">' . __( 'Github', 'footnotes-made-easy' ) . '</a>' ) );
-
-			$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/footnotes-made-easy">' . __( 'Support', 'footnotes-made-easy' ) . '</a>' ) );
-
-			$links = array_merge( $links, array( '<a href="https://wpcorner.co/support/footnotes-made-easy/">' . __( 'Documentation', 'footnotes-made-easy' ) . '</a>' ) );
 			
-		}
+			$links[] = '<a class="footnotes-made-easy-review" href="https://wordpress.org/support/plugin/footnotes-made-easy/reviews/#new-post" target="_blank" rel="noopener noreferrer" title="' . esc_attr__( 'Rate our plugin', 'footnotes-made-easy' ) . '">
+					<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+					</a>';
 
+		echo '<style>.footnotes-made-easy-review span,.footnotes-made-easy-review span:hover{color:#ffb900}.footnotes-made-easy-review span:hover~span{color:#888}</style>';
+		}
 		return $links;
 	}
 
