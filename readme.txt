@@ -1,11 +1,11 @@
 === Footnotes Made Easy ===
 Contributors: lumiblog, divibanks, dartiss, manuell
-Tags: bibliography, footnotes, formatting, reference
 Donate link: https://divibanks.io/sponsor/
-Requires at least: 4.6
+Tags: bibliography, footnotes, formatting, reference
+Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 3.0.7
+Stable tag: 4.0.0-beta.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ Footnotes Made Easy is a simple, but powerful, method of adding footnotes to you
 
 **Footnotes Made Easy is a fork of [WP Footnotes](https://github.com/drzax/wp-footnotes "Github - wp-footnotes"), a plugin by Simon Elvery which was abandoned some years ago**.
 
-**Please visit the [Github page](https://github.com/divibanks/footnotes-made-easy/ "Github") for the latest code development, planned enhancements and known issues**.
+**Please visit the [Github page](https://github.com/lumumbapl/footnotes-made-easy/ "Github") for the latest code development, planned enhancements and known issues**.
 
 == Getting Started ==
 
